@@ -1,6 +1,6 @@
-import GridPostList from "@/components /shared/GridPostList";
-import Loader from "@/components /shared/Loader";
-import { Button } from "@/components /ui/button";
+import GridPostList from "@/components/shared/GridPostList";
+import Loader from "@/components/shared/Loader";
+import { Button } from "@/components/ui/button";
 import { useUserContext } from "@/context/AuthContext";
 import { useGetUserPosts } from "@/lib/react-query/queriesAndMutations";
 import { Link, useLocation, useParams } from "react-router-dom";
@@ -39,7 +39,7 @@ const Profile = () => {
                 <Link
                   to={`/update-profile/${userId}`}
                   className={`${
-                    user.id === current_user.$id && "hidden"
+                    userId !== current_user.id && "hidden"
                   } flex items-center gap-1 hover:text-purple-500`}
                 >
                   <img

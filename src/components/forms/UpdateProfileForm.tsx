@@ -1,8 +1,8 @@
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Button } from "@/components /ui/button";
+import { Button } from "@/components/ui/button";
 import { useForm } from "react-hook-form";
-import { useToast } from "@/components /ui/use-toast";
+import { useToast } from "@/components/ui/use-toast";
 
 import {
   Form,
@@ -11,10 +11,10 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components /ui/form";
-import { Input } from "@/components /ui/input";
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 import { UpdateProfileValidation } from "@/lib/validation";
-import Loader from "@/components /shared/Loader";
+import Loader from "@/components/shared/Loader";
 import {
   useGetCurrentUser,
   useUpdateAccout,

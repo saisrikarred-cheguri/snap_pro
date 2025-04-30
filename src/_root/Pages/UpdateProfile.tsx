@@ -1,4 +1,4 @@
-import UpdateProfileForm from "@/components /forms/UpdateProfileForm";
+import UpdateProfileForm from "@/components/forms/UpdateProfileForm";
 import { useUserContext } from "@/context/AuthContext";
 import React from "react";
 

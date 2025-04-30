@@ -1,5 +1,5 @@
-import GridUserList from "@/components /shared/GridUserList";
-import Loader from "@/components /shared/Loader";
+import GridUserList from "@/components/shared/GridUserList";
+import Loader from "@/components/shared/Loader";
 import { useUserContext } from "@/context/AuthContext";
 import { useGetAllUsers } from "@/lib/react-query/queriesAndMutations";
 import React from "react";
